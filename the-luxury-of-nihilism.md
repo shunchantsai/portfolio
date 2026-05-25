@@ -1,6 +1,6 @@
 # The Luxury of Nihilism: How Western Influencers Became the Attention Economy's Useful Idiots
 
-—  
+  
 *This piece applies systems-level risk modeling to the intersection of digital information operations, geopolitical competition, and critical infrastructure investment. It identifies structural feedback loops across three ideological archetypes and traces their downstream material costs to the median American household and Western energy transition capacity.*
 
 ## Introduction: The Structural Paradox of Liberal Democracy's Open Architecture
