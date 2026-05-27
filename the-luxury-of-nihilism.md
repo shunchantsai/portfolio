@@ -52,7 +52,7 @@ This dynamic raises a diagnostic question that the taxonomy above deliberately l
 
 Yet the most operationally significant insight is this: *the question of individual intent is, structurally, a distraction.* Whether a given influencer consciously serves adversarial objectives or simply optimizes for the same outputs by accident is largely irrelevant to the downstream systemic damage. Both the witting asset and the unwitting vector produce functionally identical information pollution. The grey zone between them is precisely what makes this class of actor so difficult to regulate, so easy to defend, and so valuable to adversarial states. The correct analytical frame is not moral — it is structural. The question is not whether they know, but whether the architecture they operate within guarantees the same output regardless.
 
-![Systems-level flowchart of adversarial influence operations](influence-system-diagram.svg)
+![Systems-level flowchart of adversarial influence operations](influence-system-diagram.png)
 ---
 
 ## 2. The Triad of Western Information Pollution
