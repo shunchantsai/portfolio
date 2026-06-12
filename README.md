@@ -7,7 +7,7 @@ Welcome. I am an analyst focused on the intersection of digital information oper
 * [Legitimacy Arbitrage: The KMT's Beijing Channel as a Systemic Risk to Taiwan's Negotiating Coherence](legitimacy-arbitrage-kmt-beijing-channel.md)
 
 ## Methodology
-My work applies systems-level risk modeling to identify structural feedback loops. I utilize iterative AI-assisted workflows for data synthesis while maintaining full editorial control over strategic outputs.
+Welcome. I am an analyst focused on the intersection of geopolitical competition, critical infrastructure resilience, and digital information operations. My work is grounded in physical and social science methodology — BSc Geography, MSc Climate Change, and MRes Urban Sustainability and Resilience, all at University College London — applied to systemic risk across political, environmental, and cognitive domains.
 
 ## Contact
 shunchantsa@gmail.com
