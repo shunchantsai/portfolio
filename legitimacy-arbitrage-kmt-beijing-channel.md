@@ -1,6 +1,6 @@
 **Title:** Legitimacy Arbitrage: The KMT's Beijing Channel as a Systemic Risk to Taiwan's Negotiating Coherence
 
-**Executive Summary** — State your analytical thesis in three sentences. Not a summary of what the essay covers — a summary of what it concludes.
+**Executive Summary**
 
 Legitimacy arbitrage refers to Beijing's strategic exploitation of Taiwan's democratic pluralism — specifically its opposition party's independent access to mainland interlocutors — to generate negotiating leverage without requiring direct coercive action. As Taiwan approaches its 2026 local election cycle, the structural conditions for intensified arbitrage are strengthening, not weakening: the KMT has re-established a direct leadership channel to Beijing through the 鄭習會, while simultaneously signaling to Washington that Taiwan's defensive commitments are negotiable rather than fixed. The most probable near-term trajectory is not military escalation but a gradual erosion of Taiwan's negotiating coherence — a process that is difficult to observe in real time and therefore systematically underpriced in conventional risk assessments.
 
