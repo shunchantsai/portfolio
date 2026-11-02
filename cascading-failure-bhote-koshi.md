@@ -1,8 +1,5 @@
 # Cascading Failure on the Bhote Koshi: A Catastrophe-Risk Case Study of the 2026 Rasuwa Flood
 
-*One-sentence positioning line*  
-(e.g. “This case study reconstructs a cascading mountain hazard under explicit uncertainty constraints and examines the insurance and protection-gap layer that sits on top of the physical event.”)
-
 ---
 
 ## Executive Summary
@@ -29,9 +26,11 @@ At 08:37 Nepal Time on 26 August 2026, a large, rapid slope failure near the Nep
 
 The initiating failure and the entry of material into the drainage network are **CONFIRMED**. Rapid downstream propagation and the gauge response are **strongly supported** by hydrological monitoring and multiple independent situational sources. The precise mechanism responsible for every segment of the flood hydrograph is **not uniformly confirmed**.
 
+The cascading sequence, with confirmed and hypothesised elements distinguished, is shown in the hazard-chain diagram (`01_event_reconstruction/`).
+
 ### 1.2 Source location and volume
 
-Two peaks sit roughly four kilometres apart in the same massif: Langtang Lirung (7,234 m) and Tsangbu Ri (also called Kimshung, 6,781 m). The USGS event page places the signal near Langtang Lirung without specifying flank or elevation. An EarthArXiv preprint argues for failure on the northern flank of Langtang Lirung. Adhikari, Subedi et al. (*Seismica*, October 2026) place a rock fall with some ice, on the order of 100 million cubic metres, on the north flank of Tsangbu Ri, with a relocated seismic point argued to be consistent with a scarp visible on post-event imagery. The accounts have not been reconciled. The volume, ice content and Tsangbu Ri flank attribution appear only in the *Seismica* paper; the northern-flank Langtang Lirung claim appears only in the preprint. Neither is a shared finding.
+Two peaks sit roughly four kilometres apart in the same massif: Langtang Lirung (7,234 m) and Tsangbu Ri (also called Kimshung, 6,781 m). The USGS event page places the signal near Langtang Lirung without specifying flank or elevation. An EarthArXiv preprint argues for failure on the northern flank of Langtang Lirung. Adhikari, Subedi et al. (*Seismica*, October 2026) place a rock fall with some ice, on the order of 100 million cubic metres, on the north flank of Tsangbu Ri, with a relocated seismic point argued to be consistent with a scarp visible on post-event imagery. The accounts have not been reconciled. The volume, ice content and Tsangbu Ri flank attribution appear only in the *Seismica* paper; the northern-flank Langtang Lirung claim appears only in the preprint. Neither is a shared finding. The source area and corridor are shown in the event location map (`01_event_reconstruction/maps/`).
 
 A seismic source location and a visible detachment scarp are not necessarily the same geographical point. Without published relocation uncertainty and the actual spatial separation between the seismic solution and the scarp, the cross-check cannot be weighed quantitatively here. For downstream risk analysis the distinction between the two peaks is secondary: both locations feed the same drainage. For forensic hazard reconstruction it remains open and is carried as **REPORTED**.
 
@@ -190,11 +189,12 @@ These omissions matter because the event was a high-velocity debris flood, not a
 | Flow velocity and momentum            | Structural loading                                  | Epistemic (hazard variable) |
 | Debris blockage                       | Local water-level increase, flow diversion          | Aleatory + epistemic      |
 
-A depth-only function is therefore a weak representation of damage to bridges, hydropower works and other infrastructure in a debris flood. Those mechanisms are identified, not modelled. The residual uncertainty is predominantly epistemic: it stems from incomplete process representation and uncalibrated parameters rather than from random variation around a well-specified function.
+
+A depth-only linear function is a weak representation of damage to bridges, hydropower works and other infrastructure in a debris flood. Empirical and experimental work on debris flows and debris floods shows that damage is driven by the interaction of depth with velocity, sediment concentration, boulder impact and scour rather than by hydrostatic depth alone (Jakob & Hungr 2005; Fuchs et al. 2007; Totschnig et al. 2011). The 2021 Chamoli event provides a recent high-mountain analogue in which rock-ice avalanche and debris-flow processes produced infrastructure damage inconsistent with clear-water depth-damage assumptions (Shugar et al. 2021). The linear placeholders used here, informed by the clear-water framework of Huizinga, de Moel and Szewczyk (2017), therefore omit the dominant loading mechanisms for this event type. Those mechanisms are identified, not modelled.
 
 ### 3.3 Ground-up loss result and what it represents
 
-Applying the functions to the illustrative exposure table produces a ground-up loss of approximately **US$33.3 million** under the stated assumptions. That figure is a deterministic model output for the included synthetic assets. It is **direct physical damage** only. Business interruption and other indirect economic consequences are not included. No policy limits, deductibles, sub-limits, exclusions or reinsurance structures are applied, so insured loss and net retained loss are not calculated.
+Applying the functions to the illustrative exposure table produces a ground-up loss of approximately **US$33.3 million** under the stated assumptions (Section 3; reproducible from vulnerability_functions.py). That figure is a deterministic model output for the included synthetic assets. It is **direct physical damage** only. Business interruption and other indirect economic consequences are not included. No policy limits, deductibles, sub-limits, exclusions or reinsurance structures are applied, so insured loss and net retained loss are not calculated.
 
 The result answers a narrow question: given this exposure table, these assigned depths and these vulnerability functions, what damage value does the arithmetic produce? It does not estimate how much of the real event’s loss was incurred, insured, recoverable or retained. Asset-level losses sum to the reported total (invalid rows excluded); the calculation is reproducible from the stated inputs and code.
 
@@ -202,16 +202,22 @@ The result answers a narrow question: given this exposure table, these assigned 
 
 Several external figures are retained as **independent reference points** for the event’s reported physical, economic and insurance impacts. They provide context for interpreting the illustrative model output. They are **not directly comparable** with it and are **not used as calibration targets**.
 
-| Benchmark                                              | Approximate figure                                                                | What it measures                                                                                                                        | What it does not measure                                                 |
-|--------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| Copernicus EMSR927 (AOI01–02)                          | 864 building points graded; named facilities and transport links graded destroyed | Image-based damage classification in two small AOIs                                                                                     | Corridor-wide loss; replacement cost; insured loss                       |
-| UNDP RAPIDA (via OCHA Sitrep No. 6, as of 3 Sept 2026) | ~US$158.6 million potential building damage (±30%)                                | Potential building-damage estimate for the assessment scope                                                                             | Total disaster loss; verified repair costs; model ground-up loss         |
-| National loss estimate                                 | ~US$2.56 billion (NPR 387.5 billion)                                              | Official preliminary estimate of property, housing and infrastructure loss, stated by the Chief Executive of NDRRMA on 4 September 2026 | A fully documented primary methodology paper; insured loss; model output |
-| Reconstruction need (NDRRMA RDNA)                      | ~US$4.7–4.8 billion                                                               | Longer-term recovery and reconstruction needs from the official Rapid Damage and Needs Assessment                                       | Interchangeable with the ~US$2.56 billion loss estimate; insured loss    |
-| NIA claims snapshot, ~31 Aug 2026                      | NPR 25.87 billion filed (~US$171 million); 583 policies                           | Claims filed/reported at that date                                                                                                      | Ultimate paid loss; total economic damage                                |
-| NIA claims snapshot, ~29 Sept 2026                     | NPR 20.98 billion filed; 2,180 policies                                           | Later reporting point; not blended with the August snapshot                                                                             | Same as above                                                            |
+**Exhibit 1. External benchmarks kept separate from the illustrative model output**  
 
-The ~US$2.56 billion figure originates from an official statement by **Dharma Raj Upreti**, Chief Executive of the **National Disaster Risk Reduction and Management Authority (NDRRMA)**, given to Reuters on 4 September 2026. He reported that property, housing and infrastructure losses were estimated at **at least NPR 387.5 billion** (US$2.56 billion at the then-prevailing exchange rate), calculated in coordination with relevant agencies, with a more detailed assessment to follow.
+| Benchmark | Approximate figure | What it measures | What it does not measure |
+|-----------|--------------------|------------------|--------------------------|
+| Illustrative model (Section 3) | ~US$33.3 million | Deterministic ground-up loss on included synthetic assets | Corridor or national loss; insured loss |
+| Copernicus EMSR927 (AOI01–02) | 864 building points graded; named facilities and transport links graded destroyed | Image-based damage classification in two small AOIs | Corridor-wide loss; replacement cost; insured loss |
+| UNDP RAPIDA (via OCHA Sitrep No. 6, 3 Sept 2026) | ~US$158.6 million potential building damage (±30%) | Potential building-damage estimate for the assessment scope | Total disaster loss; verified repair costs; model ground-up loss |
+| National loss estimate (NDRRMA, 4 Sept 2026) | ~US$2.56 billion (NPR 387.5 billion) | Preliminary official estimate of property, housing and infrastructure loss | Fully documented methodology; insured loss; model output |
+| RDNA total effects | ~US$2.7 billion (NDRRMA/NPC RDNA, September 2026)| Physical damage + economic losses | Reconstruction needs; insured loss |
+| RDNA reconstruction needs | ~US$4.7–4.8 billion (NDRRMA/NPC RDNA, September 2026)| Longer-term recovery and reconstruction needs | Interchangeable with the loss estimate; insured loss |
+| NIA claims, ~31 Aug 2026 | ~US$171 million (NPR 25.87 billion); 583 policies (NIA figures as of 16 October 2026; Banjade 2026)| Claims filed/reported at that date | Ultimate paid loss; total economic damage |
+| NIA claims, ~29 Sept 2026 | ~US$139 million (NPR 20.98 billion); 2,180 policies (NIA figures as of 16 October 2026; Banjade 2026)| Later reporting point (not blended with August) | Same as above |
+
+*Sources: Section 3 model output; Copernicus EMS EMSR927 grading products (27 Aug 2026); OCHA Rasuwa Flood Situation Report No. 6 (3 Sept 2026); NDRRMA statement reported by Reuters (4 Sept 2026); NDRRMA/NPC Rapid Damage and Needs Assessment (Sept 2026); NIA claims snapshots as reported Aug–Sept 2026.*
+
+The ~US$2.56 billion figure originates from an official statement by **Dharma Raj Upreti**, Chief Executive of the **National Disaster Risk Reduction and Management Authority (NDRRMA)** (NDRRMA / Reuters, 4 September 2026), given to Reuters on 4 September 2026. He reported that property, housing and infrastructure losses were estimated at **at least NPR 387.5 billion** (US$2.56 billion at the then-prevailing exchange rate), calculated in coordination with relevant agencies, with a more detailed assessment to follow.
 
 The subsequent **Rapid Damage and Needs Assessment (RDNA) – Rasuwa-Bhotekoshi Flood 2026** (published by NDRRMA with the National Planning Commission in September 2026) refined the picture: total effects (physical damage + economic losses) of approximately US$2.7 billion and longer-term recovery/reconstruction needs of approximately US$4.7–4.8 billion. The two quantities are distinct and must not be treated as interchangeable.
 
@@ -264,14 +270,19 @@ By 16 October 2026, insurers had reported approximately **NPR 20.9 billion in cl
 
 The reported claims were distributed across several insurance classes:
 
-| Insurance class            | Claims reported | Reported claim value (NPR) |
-| -------------------------- | --------------: | -------------------------: |
-| Property                   |             576 |               9.56 billion |
-| Engineering and contractor |             174 |               4.40 billion |
-| Motor                      |           1,067 |               2.85 billion |
-| Transit                    |             105 |               2.34 billion |
-| Other                      |             556 |               1.51 billion |
-| Health                     |              53 |              246.3 million |
+**Exhibit 2. NIA claims by insurance class, as of 16 October 2026**  
+
+| Insurance class | Claims reported | Reported claim value (NPR) |
+|-----------------|-----------------|----------------------------|
+| Property | 576 | 9.56 billion |
+| Engineering and contractor | 174 | 4.40 billion |
+| Motor | 1,067 | 2.85 billion |
+| Transit | 105 | 2.34 billion |
+| Other | 556 | 1.51 billion |
+| Health | 53 | 246.3 million |
+| **Total** | **~2,531** | **~20.9 billion** |
+
+*Source: Nepal Insurance Authority figures as of 16 October 2026, reported in Yagya Banjade, “Insurers have paid just 4 percent of Bhotekoshi flood claims,” The Kathmandu Post, 28 October 2026. Paid amount at that date: NPR 821.39 million (~3.9% of reported claims).*
 
 Property insurance accounted for the largest reported claim value, while motor insurance generated the largest number of claims. Engineering and contractor insurance also represented a substantial share of the reported value, reflecting the importance of infrastructure and construction-related risks in the affected area.
 
@@ -389,16 +400,24 @@ The residual uncertainty is predominantly epistemic.
 
 The distinction matters for model use. Epistemic uncertainty can be reduced through improved process understanding, observations, exposure data and calibration, although it cannot necessarily be eliminated. Aleatory uncertainty represents residual variability in outcomes under a specified model and set of conditions. It is characterised and quantified through probabilistic modelling, while portfolio aggregation and risk transfer help assess and finance its consequences. In the present analysis, neither component is quantified probabilistically; the dominant limitations are epistemic, because the hazard representation, exposure and vulnerability assumptions remain insufficiently established. The absence of a stochastic catalogue is a separate constraint: a single reconstructed event does not establish the frequency dimension of catastrophe risk.
 
+The epistemic/aleatory distinction used here follows the uncertainty typology commonly applied in catastrophe-model governance and in the IPCC’s treatment of uncertainty, in which epistemic uncertainty is reducible through improved knowledge and data while aleatory uncertainty is characterised probabilistically under a specified model (IPCC 2010; Grossi & Kunreuther 2005).
+
+The four foundations required for any meaningful reconciliation—exposure coverage, hazard intensity representation, vulnerability basis and loss definition—map directly onto the epistemic/aleatory distinction. Incomplete or non-representative exposure, an intensity field that omits dominant processes, uncalibrated vulnerability functions, and inconsistent loss definitions are epistemic gaps: they reflect incomplete knowledge of the system being modelled. Only after those foundations are sufficiently established does residual variability around a specified model become the dominant (aleatory) component. In the present analysis the four foundations remain unaligned, so the uncertainty is predominantly epistemic.
+
 ### 5.4 Comparison with a rapid-mapping product (EMSR927)
 
-Copernicus EMSR927 provides image-based damage grading for defined areas of interest (including Syabrubesi), reporting counts of buildings and infrastructure classified as destroyed or damaged. It is a rapid-mapping product designed to support emergency response. It is not a loss model.
+Copernicus EMSR927 provides image-based damage grading for defined areas of interest (including Syabrubesi), reporting counts of buildings and infrastructure classified as destroyed or damaged (Copernicus EMS EMSR927 Grading product, 27 August 2026). It is a rapid-mapping product designed to support emergency response. It is not a loss model.
 
 The two products serve different purposes:
+
+**Exhibit 3. Comparison of EMSR927 grading and the present analysis**  
 
 | Product | Purpose | Output | What it does not provide |
 |---------|---------|--------|--------------------------|
 | EMSR927 grading | Rapid situational awareness | Image-based damage classification in specific AOIs | Replacement cost; ground-up or insured loss; corridor-wide totals |
 | This analysis | Transparent demonstration of an exposure–vulnerability–loss chain | Illustrative ground-up loss on synthetic assets, with explicit limits | Event-wide loss estimate; calibrated vulnerability; hydraulic intensity field |
+
+*Sources: Copernicus Emergency Management Service, EMSR927 grading products (27 Aug 2026); this study, Section 3.*
 
 The EMSR927 classifications could inform a future exposure or damage-validation exercise, but they cannot directly validate the illustrative loss calculation without aligning asset coverage, classification definitions, spatial extent and observation dates. The two outputs are complementary. Grading products inform what was damaged; the present analysis shows how a loss calculation is structured and where its limits lie. Neither replaces the other.
 
@@ -412,11 +431,11 @@ The practical implication is that model governance must treat process uncertaint
 
 ### 6.2 For insurance and public risk financing in high-concentration mountain corridors
 
-Risk-finance design in high-concentration mountain corridors must account for correlated damage across assets and sectors. A single event can simultaneously impair commercial generation capacity, public transport infrastructure, border connectivity and household livelihoods. These losses do not fall within one insurance portfolio or one financing mechanism.
+The event shows that a single cascading trigger in a narrow mountain corridor can produce correlated losses across commercial generation capacity, public transport infrastructure, border connectivity and household livelihoods. These losses do not fall inside one insurance portfolio or one financing mechanism.
 
-Commercial insurance and reinsurance may transfer part of the loss associated with identifiable, well-documented assets, subject to treaty capacity, facultative placement and claims-settlement constraints. Public infrastructure and dispersed household or informal livelihood risks require separate fiscal, humanitarian and social-protection arrangements. The challenge is therefore not simply to increase insurance penetration, but to ensure that the different financing mechanisms address the correlated losses that fall outside each other’s coverage.
+Section 4.5 already sets out the three-layer structure that results: commercial insurance and reinsurance for identifiable assets (subject to capacity and settlement constraints), sovereign contingent facilities for public infrastructure, and largely retained or humanitarian channels for household and informal risk. The implication for risk-finance design is that the residual is structural. Increasing insurance penetration on commercial assets does not automatically cover the public or household layers, nor does it address the correlated nature of the exposure.
 
-The difference between filed claims and total disaster effects illustrates the mismatch in scope between the insurance market’s reported claims and the wider economic consequences of the event. It is not a measure of the uninsured share of national loss.
+The difference between filed claims and total disaster effects (Section 4.4) illustrates the scope mismatch; it is not a measure of the uninsured share of national loss.
 
 ### 6.3 Natural next analytical steps
 
@@ -427,6 +446,8 @@ Three extensions would move the work from an illustrative demonstration toward a
 - **Spatial exposure screening.** Replace manual asset-location assumptions with a spatial intersection between a modest, openly available asset layer and a clearly defined affected-area footprint. Where a defensible hazard-intensity raster is available, overlay it to assign asset-level intensity values. EMSR927 damage-grading or affected-area products can support spatial screening and comparison, but should not be treated as substitutes for flood-depth or debris-flow intensity surfaces. An observed inundation extent, a satellite-mapped affected area and a modelled hazard extent are different products.
 
 None of these steps would produce AAL, PML or EP curves, nor would they claim to estimate event-wide residual loss. They would, however, make the present chain more directly usable for underwriting discussion and for identifying which residual risks must still be absorbed by government, households or the international system.
+
+An illustrative insured-loss layer that applies hypothetical deductibles and limits to a small set of synthetic assets is implemented in `03_insurance_financial_layer/insured_loss_layer.py`. Under the demonstration terms shown there, the calculation converts a ground-up total of approximately US$33.8 million into roughly US$21.4 million gross insured and US$12.4 million retained. All terms are labelled as demonstration only and the output is not an estimate of actual insured loss.
 
 ---
 
@@ -440,6 +461,38 @@ What remains unresolved is the quantitative representation required for underwri
 
 For an insurer or reinsurer, the essential understanding is therefore threefold: the potential for correlated losses across multiple assets in a single corridor event; the limits of current process representation and the consequent need to treat any loss estimate as conditional on unresolved mechanism assumptions; and the distinction between ground-up physical loss and the insured loss that remains after policy terms and reinsurance. For a public risk-finance institution, the essential understanding is that residual risk is structural. Sovereign contingent facilities (such as the Cat DDO) and later emergency financing can address part of the public-infrastructure and response need, but they do not close the gap for household and informal livelihood losses, nor do they substitute for a clearer view of correlated exposure.
 
-The work does not claim to have estimated event-wide ground-up, insured or residual loss. It demonstrates the analytical chain required to do so, the status discipline needed when mechanisms remain partly hypothetical, and the separation of categories required to avoid forcing agreement between incommensurable figures. Those are the elements an insurer, reinsurer or public risk-finance institution would need to understand before treating the August 2026 cascade as a quantified catastrophe risk rather than a documented, high-concentration event whose full financial consequences remain incompletely observed.
+The work does not claim to have estimated event-wide ground-up, insured or residual loss. It demonstrates the analytical chain required to do so, the status discipline needed when mechanisms remain partly hypothetical, and the separation of categories required to avoid forcing agreement between incommensurable figures. The work treats process uncertainty as a first-order constraint on what can be claimed: unresolved mechanisms and incomplete intensity representation limit the analysis to a transparent, conditional calculation rather than an event-wide loss estimate. Those are the elements an insurer, reinsurer or public risk-finance institution would need to understand before treating the August 2026 cascade as a quantified catastrophe risk rather than a documented, high-concentration event whose full financial consequences remain incompletely observed.
 
-## Notes / Sources
+## References
+
+Banjade, Y. (2026) Insurers have paid just 4 percent of Bhotekoshi flood claims. *The Kathmandu Post*, 28 October.
+
+Copernicus Emergency Management Service (2026) EMSR927: Nepal – Flood. Grading products, 27 August 2026. European Commission.
+
+Fuchs, S., Heiss, K. & Hübl, J. (2007) Towards an empirical vulnerability function for use in debris flow risk assessment. *Natural Hazards and Earth System Sciences*, 7(5), 495–506.
+
+Grossi, P. & Kunreuther, H. (eds) (2005) *Catastrophe Modeling: A New Approach to Managing Risk*. Springer.
+
+Huizinga, J., de Moel, H. & Szewczyk, W. (2017) *Global flood depth-damage functions: Methodology and the database with guidelines*. JRC Technical Reports.
+
+IPCC (2010) *Guidance Note for Lead Authors of the IPCC Fifth Assessment Report on Consistent Treatment of Uncertainties*. Intergovernmental Panel on Climate Change.
+
+Jakob, M. & Hungr, O. (eds) (2005) *Debris-flow Hazards and Related Phenomena*. Springer.
+
+Nepal Insurance Authority (2026) *Hydropower Insurance in Nepal: Assessment of Trends, Challenges, and Opportunities for Reform*. Kathmandu.
+
+NDRRMA / National Planning Commission (2026) *Rapid Damage and Needs Assessment: Rasuwa-Bhotekoshi Flood 2026*. Kathmandu, September.
+
+OCHA (2026) Nepal: Rasuwa Flood Situation Report No. 6 (as of 3 September 2026). United Nations.
+
+Shugar, D.H. et al. (2021) A massive rock and ice avalanche caused the 2021 disaster at Chamoli, Indian Himalaya. *Science*, 373(6552), 300–306.
+
+Swiss Re (2022) *sigma: Natural catastrophes in 2021*. Swiss Re Institute.
+
+Totschnig, R., Sedlacek, W. & Fuchs, S. (2011) A quantitative vulnerability function for fluvial sediment transport. *Natural Hazards*, 58(2), 681–703.
+
+UNOSAT (2026) Satellite-detected newly formed barrier lakes following an ice-rock avalanche in Rasuwa District, Nepal, as of 28 August 2026. United Nations Satellite Centre.
+
+World Bank (2017) *Financial Protection Against Natural Disasters: An Operational Framework for Disaster Risk Financing and Insurance*. World Bank.
+
+World Bank (2024) Disaster Resilience Development Policy Credit with Catastrophe Deferred Drawdown Option (Cat DDO), approved 8 October 2024.
