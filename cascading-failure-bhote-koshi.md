@@ -26,11 +26,21 @@ At 08:37 Nepal Time on 26 August 2026, a large, rapid slope failure near the Nep
 
 The initiating failure and the entry of material into the drainage network are **CONFIRMED**. Rapid downstream propagation and the gauge response are **strongly supported** by hydrological monitoring and multiple independent situational sources. The precise mechanism responsible for every segment of the flood hydrograph is **not uniformly confirmed**.
 
-The cascading sequence, with confirmed and hypothesised elements distinguished, is shown in the hazard-chain diagram (`01_event_reconstruction/`).
+The cascading sequence, with confirmed and hypothesised elements distinguished, is shown below.
+
+![Hazard-chain diagram](https://raw.githubusercontent.com/shunchantsai/nepal-flood-cat-case-study/master/01_event_reconstruction/hazard_chain.jpg)
+
+*Source: [hazard-chain diagram](https://github.com/shunchantsai/nepal-flood-cat-case-study/blob/master/01_event_reconstruction/hazard_chain.jpg) in the nepal-flood-cat-case-study repository.*
 
 ### 1.2 Source location and volume
 
 Two peaks sit roughly four kilometres apart in the same massif: Langtang Lirung (7,234 m) and Tsangbu Ri (also called Kimshung, 6,781 m). The USGS event page places the signal near Langtang Lirung without specifying flank or elevation. An EarthArXiv preprint argues for failure on the northern flank of Langtang Lirung. Adhikari, Subedi et al. (*Seismica*, October 2026) place a rock fall with some ice, on the order of 100 million cubic metres, on the north flank of Tsangbu Ri, with a relocated seismic point argued to be consistent with a scarp visible on post-event imagery. The accounts have not been reconciled. The volume, ice content and Tsangbu Ri flank attribution appear only in the *Seismica* paper; the northern-flank Langtang Lirung claim appears only in the preprint. Neither is a shared finding. The source area and corridor are shown in the event location map (`01_event_reconstruction/maps/`).
+
+The source area and corridor are shown below.
+
+![Event location map](https://raw.githubusercontent.com/shunchantsai/nepal-flood-cat-case-study/master/01_event_reconstruction/maps/event_location.png)
+
+*Source: [event location map](https://github.com/shunchantsai/nepal-flood-cat-case-study/blob/master/01_event_reconstruction/maps/event_location.png) in the nepal-flood-cat-case-study repository.*
 
 A seismic source location and a visible detachment scarp are not necessarily the same geographical point. Without published relocation uncertainty and the actual spatial separation between the seismic solution and the scarp, the cross-check cannot be weighed quantitatively here. For downstream risk analysis the distinction between the two peaks is secondary: both locations feed the same drainage. For forensic hazard reconstruction it remains open and is carried as **REPORTED**.
 
@@ -121,9 +131,10 @@ Corridor concentration has implications at several stages of the loss calculatio
 **Vulnerability and financial concentration.** A residential building, a bridge, a powerhouse and a tunnel do not share the same damage mechanisms, repair times, replacement values or insurance arrangements. Their physical vulnerability and financial treatment must therefore be differentiated. **Asset replacement value, insured value and recoverable insurance loss are separate quantities**; the last depends on policy coverage, limits, deductibles, exclusions and applicable terms.
 
 The available evidence establishes the importance of these asset classes and their spatial concentration. It does not provide sufficient information to quantify all of these loss components. Uncertainty in the hazard chain therefore maps onto a small set of high-consequence locations rather than being diluted across a diffuse portfolio — which is precisely why transparent status tagging and the refusal to force calibration matter in the sections that follow.
+
 ---
 
-**Section 3. Exposure, Vulnerability, and Illustrative Loss**
+## Section 3. Exposure, Vulnerability, and Illustrative Loss
 
 Sections 1 and 2 establish what is known and unknown about the hazard and why consequences concentrated along the corridor. This section turns to the modelling chain: how exposure is represented, how intensity is translated into damage, what the illustrative loss figure is, and how external damage and claims numbers are treated. Model output, graded or reported damage, national economic estimates and insurance claims are kept in separate categories. They are not forced into agreement.
 
@@ -145,15 +156,15 @@ Hazard intensity is translated into physical damage through simplified, literatu
 
 **Implemented form.** For each asset \(i\):
 
-\[
-D_i = \min(1,\ s_{t(i)}\,\cdot\, h_i)
-\]
+$$
+D_i = \min(1, s_{t(i)} \cdot h_i)
+$$
 
-\[
+$$
 L_i = R_i \cdot D_i
-\]
+$$
 
-where \(h_i\) is assigned flood depth (m), \(R_i\) is replacement value (USD), \(D_i\) is the damage ratio, \(L_i\) is direct physical ground-up loss, and \(s_{t(i)}\) is an asset-type slope:
+where $h_i$ is assigned flood depth (m), $R_i$ is replacement value (USD), $D_i$ is the damage ratio, $L_i$ is direct physical ground-up loss, and $s_{t(i)}$ is an asset-type slope:
 
 | Asset type   | Illustrative slope \(s\) (per metre depth) |
 |--------------|--------------------------------------------|
@@ -165,15 +176,17 @@ where \(h_i\) is assigned flood depth (m), \(R_i\) is replacement value (USD), \
 
 Damage ratios are bounded in \([0, 1]\). Unrecognised asset types, missing depths or negative depths yield NaN and are excluded from the total rather than treated as zero. Loss under these direct-damage assumptions cannot exceed replacement value. The calculation is fully reproducible from the exposure table and the function defined in `02_exposure_vulnerability/vulnerability_functions.py`.
 
-**Worked example.** Asset A0005 (hydropower): \(R = \$50{,}000{,}000\), \(h = 2.5\,\mathrm{m}\), \(s = 0.25\):
+**Worked example.** Asset A0005 (hydropower):
 
-\[
+$R = \$50{,}000{,}000$, $h = 2.5\,\mathrm{m}$, $s = 0.25$.
+
+$$
 D = \min(1,\ 0.25 \times 2.5) = 0.625
-\]
+$$
 
-\[
+$$
 L = 50{,}000{,}000 \times 0.625 = \$31{,}250{,}000
-\]
+$$
 
 **Limitations of different kinds.**
 
@@ -235,13 +248,13 @@ A meaningful reconciliation would first require aligning those four foundations 
 
 ---
 
-# 4. Insurance, Claims, and the Protection Gap
+## 4. Insurance, Claims, and the Protection Gap
 
 Sections 1–3 reconstruct the hazard chain, examine the concentration of exposed infrastructure along the affected corridor, and demonstrate an illustrative exposure–vulnerability–loss calculation. This section examines how the resulting losses interact with Nepal’s insurance market and wider disaster-financing arrangements.
 
 The central distinction is between **economic loss, insured loss, claims submitted, claims paid and the funding required for recovery**. These are related, but they are not equivalent. The available figures provide evidence of the scale of the insurance response and the wider financing challenge; they do not, by themselves, establish a definitive event-wide protection-gap estimate.
 
-## 4.1 Insurance exposure: hydropower and infrastructure
+### 4.1 Insurance exposure: hydropower and infrastructure
 
 The flood affected a corridor in which hydropower generation, transmission infrastructure, roads and bridges are economically important and geographically concentrated. This creates a particular challenge for insurers: multiple assets and projects can be exposed to the same event, while damage to one part of the corridor can disrupt the operation of others.
 
@@ -262,7 +275,7 @@ Taken together, the findings indicate that the flood struck a sector already fac
 
 **Source:** Nepal Insurance Authority, *Hydropower Insurance in Nepal: Assessment of Trends, Challenges, and Opportunities for Reform* (2026).
 
-## 4.2 Insurance claims following the August 2026 flood
+### 4.2 Insurance claims following the August 2026 flood
 
 The NIA's reported claims figures provide an indication of the scale of the insurance response, although they remain provisional and subject to adjustment as loss assessments progress.
 
@@ -294,7 +307,7 @@ The claims total also changed substantially during the reporting process. Prelim
 
 **Source:** Yagya Banjade, “Insurers have paid just 4 percent of Bhotekoshi flood claims,” *The Kathmandu Post*, 28 October 2026, reporting NIA figures as of 16 October 2026.
 
-## 4.3 Modelled loss and reported disaster effects: different measures
+### 4.3 Modelled loss and reported disaster effects: different measures
 
 The illustrative model in Section 3 produces approximately **US$33.3 million in ground-up loss** under its current exposure, hazard and vulnerability assumptions. This figure applies only to the synthetic assets included in the model. It is not an estimate of total losses from the flood, nor is it a measure of insured losses.
 
