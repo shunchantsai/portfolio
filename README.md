@@ -8,8 +8,8 @@ I am an analyst working at the intersection of physical geography, climate and c
 - [Cascading Failure on the Bhote Koshi: A Catastrophe-Risk Case Study of the 2026 Rasuwa Flood](cascading-failure-bhote-koshi.md)  
   Reconstructs a high-mountain flood-debris cascade under explicit uncertainty constraints, demonstrates a transparent exposure–vulnerability–loss chain, and examines the insurance and protection-gap layer. Companion repository: [nepal-flood-cat-case-study](https://github.com/shunchantsai/nepal-flood-cat-case-study).
 
-- Bjerknes Feedback and the 2023–24 / 2025–26 El Niño (forthcoming)  
-  Exploratory analysis of the Bjerknes feedback mechanism and its implications for the current and recent El Niño events.
+- [ENSO Structure Diagnostics: Node, Gradient, and Downstream Risk](bjerknes-diagnostic-note.md)  
+  Idealized diagnostic study that separates the temporal node and spatial gradient maximum of the equatorial Pacific see-saw, shows that teleconnection strength tracks SST structure rather than magnitude, and traces how a node-classification error propagates through an illustrative catastrophe-risk chain. Companion laboratory: [Bjerknes-Diagnostic-Lab](https://github.com/shunchantsai/Bjerknes-Diagnostic-Lab).
 
 ### Geopolitical & Information Systems
 - [The Luxury of Nihilism: How Western Influencers Became the Attention Economy's Useful Idiots](the-luxury-of-nihilism.md)
