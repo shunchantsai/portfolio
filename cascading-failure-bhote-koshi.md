@@ -106,6 +106,8 @@ Copernicus EMSR927 grading for the two small areas of interest (AOI01 Syapru Bes
 
 Hydropower deserves separate emphasis. Public reporting in the days after the event described shutdowns across multiple projects and combined affected capacity on the order of several hundred megawatts, alongside substantial numbers of workers unaccounted for at several sites. Hydropower assets concentrate replacement value, potential business-interruption exposure and, where covered, formal risk transfer. They also concentrate people. Corridor risk is therefore not only residential and transport risk; it is energy-infrastructure and workforce risk stacked on the same channel. A single event can affect multiple asset classes and several components of the same infrastructure network simultaneously — for example where damage to a bridge or access road interrupts repair or operation of a powerhouse that is itself only partially damaged.
 
+This linear concentration also creates an accumulation problem: a single event can damage multiple assets within the same portfolio and disrupt connected infrastructure, so losses cannot necessarily be understood by assessing each asset in isolation. Asset replacement value, insured value and recoverable insurance loss remain separate quantities; the last depends on policy coverage, limits, deductibles and applicable terms.
+
 ### 2.4 Satellite mapping: regional footprint and limitations
 
 Independent satellite products provide order-of-magnitude spatial context. They are not used as model inputs or calibration targets. Detailed Copernicus grading for the two AOIs is set out in Section 2.3; the comparison below places that assessment alongside broader UNOSAT product framings.
@@ -122,15 +124,7 @@ Satellite assessments indicate that the affected area extends across multiple di
 
 ### 2.5 Implications for catastrophe-risk modelling
 
-Corridor concentration has implications at several stages of the loss calculation.
-
-**Physical concentration.** Steep, confined terrain and a relatively narrow channel influence where hazard intensity *may* be concentrated. That is a basis for prioritising locations in a hazard footprint, not a measured intensity field.
-
-**Exposure concentration.** Buildings, roads, bridges, hydropower facilities and other assets are aligned along the same constrained corridor, often in close spatial proximity. Damage to one part of the network may affect the operation or accessibility of another. The exposure inventory must identify not only buildings but also transport and energy infrastructure, including relationships between connected assets. This also creates a potential **accumulation** problem: a single event can damage multiple assets within the same portfolio and disrupt connected infrastructure, so losses cannot necessarily be understood by assessing each asset in isolation. The evidence here establishes the geographical conditions for accumulation and interdependency; it does not quantify their financial magnitude.
-
-**Vulnerability and financial concentration.** A residential building, a bridge, a powerhouse and a tunnel do not share the same damage mechanisms, repair times, replacement values or insurance arrangements. Their physical vulnerability and financial treatment must therefore be differentiated. **Asset replacement value, insured value and recoverable insurance loss are separate quantities**; the last depends on policy coverage, limits, deductibles, exclusions and applicable terms.
-
-The available evidence establishes the importance of these asset classes and their spatial concentration. It does not provide sufficient information to quantify all of these loss components. Uncertainty in the hazard chain therefore maps onto a small set of high-consequence locations rather than being diluted across a diffuse portfolio — which is precisely why transparent status tagging and the refusal to force calibration matter in the sections that follow.
+The corridor concentrates both physical exposure and formal risk transfer along a narrow valley. The evidence establishes the geographical conditions for accumulation and interdependency; it does not quantify their financial magnitude. Uncertainty in the hazard chain therefore maps onto a small set of high-consequence locations rather than being diluted across a diffuse portfolio.
 
 ---
 
