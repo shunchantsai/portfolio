@@ -60,11 +60,12 @@ The hypothesis that failed material temporarily impounded a reach (commonly fram
 
 An institution can publish an expert interpretation; that interpretation can be scientifically plausible; it does not automatically mean that the temporary dam and its breach have been independently demonstrated through field evidence or a sufficiently resolved reconstruction. The existence, location, duration and breach dynamics of a temporary impoundment *during* the 26 August cascade have not been established to the evidentiary standard adopted here. The hypothesis is therefore retained rather than treated as a confirmed link in the hazard chain. Post-event barrier lakes must not be conflated with that unresolved upstream question.
 
-### 1.4 Implications for hazard reconstruction
+
+### 1.4 Implications of unresolved hazard mechanisms for catastrophe modelling
 
 For emergency response, the difference between a pure rock–ice avalanche and a cascade that included a temporary dam may be secondary once the wave has already passed. For catastrophe-risk analysis the difference is material. An amplifying breach changes the shape and timing of the hydrograph, peak intensity at downstream assets, and the credibility of any scenario set built from the event.
 
-The temporary-dam question potentially affects:
+The temporary-dam question, together with unresolved source volume, ice content and source location, potentially affects:
 
 1. **Hazard intensity** — peak discharge, flow depth, velocity and sediment concentration  
 2. **Spatial footprint** — which downstream locations are affected and to what degree  
@@ -72,15 +73,10 @@ The temporary-dam question potentially affects:
 4. **Vulnerability response** — how different infrastructure and building types experience the resulting physical conditions  
 5. **Financial loss** — the resulting damage estimates and the uncertainty around them  
 
-Treating a hypothesis as settled would understate epistemic uncertainty at the base of the modelling chain. Keeping the status explicit preserves the option to update the narrative when primary evidence arrives, without having to unwind a premature consensus. The same discipline applies to volume and source-peak ambiguity: unresolved inputs are carried as unresolved, not averaged or silently preferred.
+In a fully developed catastrophe model these differences would be expressed as alternative hazard scenarios, which would then be intersected with an exposure inventory and passed through appropriate vulnerability functions before financial terms are applied. This case study does not have sufficient hydraulic or asset-level data to quantify those alternatives. It identifies where the uncertainties enter the modelling chain and keeps the subsequent illustrative calculations distinct from estimates of actual event loss.
 
-### 1.5 Implications for catastrophe-risk modelling
+Treating any of these hypotheses as settled would understate epistemic uncertainty at the base of the modelling chain. Keeping the status explicit preserves the option to update the narrative when primary evidence arrives, without having to unwind a premature consensus. The same discipline applies to volume and source-peak ambiguity: unresolved inputs are carried as unresolved, not averaged or silently preferred. Until the mechanism is better constrained, the appropriate response is to retain alternative hazard scenarios rather than select one interpretation and treat its outputs as definitive.
 
-The unresolved elements of the hazard chain are not merely geological uncertainties. They affect the assumptions used to translate the event into financial loss.
-
-A larger or smaller mobilised volume, different ice content, or the presence of a temporary impoundment could produce materially different flow characteristics. Those differences influence the spatial distribution and intensity of flooding, and therefore the depth and velocity experienced by exposed assets. In a fully developed catastrophe model, these variables would inform alternative hazard scenarios, which would then be intersected with an exposure inventory and passed through appropriate vulnerability functions. Financial terms would subsequently determine insured and retained losses.
-
-This case study does not have sufficient hydraulic or asset-level data to quantify those alternatives reliably. Instead, it identifies where the uncertainties enter the modelling chain and distinguishes the illustrative calculations that follow from estimates of actual event loss. Until the mechanism is better constrained, the appropriate response is to retain alternative hazard scenarios rather than select one interpretation and treat its outputs as definitive.
 
 ---
 
