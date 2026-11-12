@@ -229,15 +229,9 @@ The subsequent **Rapid Damage and Needs Assessment (RDNA) – Rasuwa-Bhotekoshi 
 
 Building damage is not total disaster loss. Filed or reported claims are not ultimate paid insurance losses. Satellite exposure counts (buildings exposed to or near affected areas, population, road length) are independent spatial context, not loss estimates and not inputs to the illustrative calculation.
 
-### 3.5 Explicit refusal to force calibration
+### 3.5 Relationship to external aggregates
 
-The gap between the illustrative ground-up result (~US$33 million) and the national aggregate (~US$2.56 billion), or between the model output and RAPIDA’s potential building-damage estimate, is expected. The scopes differ. Vulnerability curves should not be retuned, and the exposure table should not be inflated, merely to force the illustrative output to match an external total.
-
-Agreement between a model and a benchmark is informative only when four foundations are aligned: (1) exposure coverage and completeness, (2) hazard intensity representation (including process type), (3) vulnerability basis (functional form and calibration), and (4) loss definition (direct physical vs total economic, ground-up vs insured). Where they are not aligned, the discrepancy is information about scope mismatch, not a reason to overwrite assumptions.
-
-In this case the four foundations are deliberately unaligned. The exposure table is synthetic and partial (epistemic incompleteness). The hazard is represented by manually assigned depth only, omitting velocity, sediment and impact processes that dominate debris-flood damage (epistemic process omission). The vulnerability functions are uncalibrated linear placeholders (epistemic parameter uncertainty). The loss definition is restricted to direct physical ground-up loss on the included assets. Under these conditions, forcing numerical agreement would conceal rather than reduce uncertainty.
-
-A meaningful reconciliation would first require aligning those four foundations and only then investigating residual differences through exposure completeness, hazard intensity, vulnerability assumptions and financial treatment. This case study does not attempt that reconciliation because the underlying data are insufficient. 
+The gap between the illustrative ground-up result (~US$33.3 million) and the national or RDNA aggregates is expected; the scopes differ. The methodological reasons for not forcing numerical agreement are set out in Section 4.
 
 ---
 
@@ -313,9 +307,9 @@ For comparison, the Government of Nepal's September 2026 Rapid Damage and Needs 
 
 The distinction between these figures matters. Physical damage refers to damage to assets; economic losses capture the effects of disrupted economic activity and services. Total disaster effects combine these two categories. Recovery and reconstruction needs are higher because they include the resources required to restore and rebuild, including measures intended to improve resilience.
 
-The US$33.3 million model output and the RDNA's US$2.695 billion estimate therefore have fundamentally different scopes. The former is a calculation for a small illustrative portfolio; the latter is a national, multi-sector assessment. Their difference is expected and does not indicate that the illustrative model has identified a particular proportion of the disaster's total loss.
+Agreement between a model output and an external benchmark is informative only when four foundations are aligned: (1) exposure coverage and completeness, (2) hazard intensity representation (including process type), (3) vulnerability basis (functional form and calibration), and (4) loss definition (direct physical versus total economic, ground-up versus insured). Where they are not aligned, the discrepancy is information about scope mismatch, not a reason to overwrite assumptions.
 
-The model should not be recalibrated simply to force its output to match the RDNA. Doing so would obscure the limitations of the synthetic exposure inventory and simplified vulnerability functions rather than improve the credibility of the analysis.
+In this case the four foundations are deliberately unaligned. The exposure table is synthetic and partial. The hazard is represented by manually assigned depth only. The vulnerability functions are uncalibrated linear placeholders. The loss definition is restricted to direct physical ground-up loss on the included assets. The US$33.3 million model output and the RDNA’s US$2.695 billion total-effects estimate therefore have fundamentally different scopes. Their difference is expected and does not indicate that the illustrative model has identified a particular proportion of the disaster’s total loss. Recalibrating the model simply to force numerical agreement would conceal rather than reduce uncertainty.
 
 **Source:** Government of Nepal, *Rapid Damage and Needs Assessment: Rasuwa-Bhotekoshi Flood 2026* (September 2026). The RDNA figures are also summarised in the Ministry of Foreign Affairs' press briefing of 11 September 2026.
 
