@@ -22,7 +22,7 @@ The case study demonstrates how hazard evidence, exposure assumptions, vulnerabi
 
 ### 1.1 Event overview
 
-At 08:37:10 Nepal Time on 26 August 2026, the USGS recorded a magnitude-5.2 landslide-type seismic event associated with the Rasuwa disaster (USGS 2026). The signal is generally interpreted as marking a large, rapid slope failure near the Nepal–China border, involving rock, ice and sediment entering the Lhende Khola and the Bhote Koshi–Trishuli river system. However, an alternative reconstruction places the initial slope failure on the afternoon of 25 August and interprets the 26 August seismic event as the failure of a temporary blockage. The timing and sequence of these processes remain unresolved. 
+At 08:37:10 Nepal Time on 26 August 2026, the USGS recorded a magnitude-5.2 landslide-type seismic event associated with the Rasuwa disaster (USGS 2026). The signal is generally interpreted as marking a large, rapid slope failure near the Nepal–China border, involving rock, ice and sediment entering the Lhende Khola and the Bhote Koshi–Trishuli river system. The precise timing of the initial slope failure relative to the 26 August seismic signal, and whether a temporary blockage formed and subsequently failed, remain unresolved. 
 
 The resulting debris flood reached the Rasuwagadhi border area at approximately 08:44 NPT, around seven minutes after the seismic event, covering roughly 20–23 kilometres downstream. It then propagated through the corridor. At Galchhi, the Trishuli gauge recorded a water-level rise of approximately nine metres within about thirty minutes; at Malekhu, the rise was approximately seven metres over a similar period.
 
@@ -417,14 +417,14 @@ EMSR927 can support future exposure screening or damage validation where asset c
 
 ### 6.1 Recommendations for insurers, reinsurers and public risk-finance institutions
 
-The analysis points to five practical priorities for assessing risk in a high-concentration mountain corridor.
+The analysis points to six practical priorities for assessing risk in a high-concentration mountain corridor.
 
 1. **Build geocoded inventories that include access roads and shared infrastructure**, not only the insured asset. Accumulation and interruption exposure depend on what lies along the same valley floor.
 2. **Record dependencies between assets**, such as which road or bridge a powerhouse relies on, so that functional interdependency (Section 2.5) can be assessed rather than assumed.
 3. **Use intensity measures beyond flood depth** where data allow, since depth alone does not capture the loading mechanisms of a debris flood (Section 3.2).
 4. **Keep loss categories separate**: physical damage, operational interruption, insured loss, claims reported, claims paid and public recovery needs answer different questions. They should not be treated as equivalent measures or used to infer an insured share without reconciliation (Section 4).
 5. **Test accumulation across asset classes and portfolios**, including whether one event can trigger claims under property, engineering, motor and transit classes at once (Table 4).
-6. **Review event definitions and access-related extensions in policy and reinsurance wordings.** The unresolved timing of the initiating failure matters for event definition: a 25 August versus 26 August reconstruction could affect the application of hours clauses and whether losses are aggregated as one or more occurrences under the relevant treaty wording. Damage to access roads also raises a coverage question where an insured asset remains operationally inaccessible despite no physical damage to the asset itself. Denial-of-access and contingent business-interruption extensions may address different aspects of this exposure, subject to their specific triggers and policy terms.
+6. **Review event definitions and access-related extensions in policy and reinsurance wordings.** The unresolved timing of the initiating failure relative to the 26 August seismic signal matters for event definition. It can affect the application of hours clauses and whether losses are aggregated as one or more occurrences under the relevant treaty wording. Damage to access roads also raises a coverage question where an insured asset remains operationally inaccessible despite no physical damage to the asset itself. Denial-of-access and contingent business-interruption extensions may address different aspects of this exposure, subject to their specific triggers and policy terms.
 
 For public risk-finance, commercial insurance addresses only part of a corridor-wide loss. Public infrastructure, household livelihoods and informal activity need separate financing, which sovereign contingent facilities (Section 4.5) can address only in part.
 
